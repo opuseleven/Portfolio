@@ -1,6 +1,7 @@
 import type { NextPage } from 'next';
-import { Banner, Toolbar, ProjectSelector } from '../components';
+import { Banner, Toolbar, ProjectSelector, ProjectInfo, DisplayProject } from '../components';
 import { Project } from '../types';
+import { getProjectById } from '../services';
 import { useState, useEffect } from 'react';
 
 const Projects: NextPage = () => {
@@ -12,7 +13,7 @@ const Projects: NextPage = () => {
   const [selectedId, setSelectedId] = useState(selectedProject.id);
 
   useEffect(() => {
-    setSelectedProject(projects[selectedId - 1]);
+    setSelectedProject(getProjectById(projects, selectedId));
   }, [selectedId])
 
 
@@ -28,6 +29,10 @@ const Projects: NextPage = () => {
       <div>
 
         <ProjectSelector selectedId={selectedId} setSelectedId={setSelectedId} />
+
+        <ProjectInfo project={selectedProject} />
+
+        <DisplayProject project={selectedProject} />
 
       </div>
 
