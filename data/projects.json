@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "component": "calc-basic",
+    "info": "A basic calculator application built with React using NextJS and Typescript.",
+    "github": "https://github.com/opuseleven/Calc-Basic"
+  },
+  {
+    "id": 2,
+    "component": "todo-app",
+    "info": "A to-do list application built with React, NextJS, and Typescript.",
+    "github": "https://github.com/opuseleven/ToDoApp"
+  },
+  {
+    "id": 3,
+    "component": "brewery-search",
+    "info": "BrewerySearchApp is a simple interface to search and filter a database of US breweries. Data provided by openbrewerydb.",
+    "github": "https://github.com/opuseleven/BrewerySearchApp"
+  },
+  {
+    "id": 4,
+    "component": "weather-app",
+    "info": "This simple weather app, built with NextJS & Typescript, allows users to search by city name and recieve a quick 3 day forecast. Data is pulled from the openweathermap API.",
+    "github": "https://github.com/opuseleven/WeatherApp"
+  }
+]
