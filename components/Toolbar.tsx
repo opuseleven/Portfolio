@@ -16,7 +16,7 @@ const Toolbar: React.FC = () => {
         <button>Projects</button>
       </Link>
 
-      <a href='https://github.com/opuseleven'>
+      <a href='https://github.com/opuseleven' target='_blank'>
         <button>GitHub</button>
       </a>
 
