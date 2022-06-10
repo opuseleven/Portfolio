@@ -2,3 +2,8 @@ export * from './Banner';
 export * from './Toolbar';
 export * from './ProjectSelector';
 export * from './ProjectInfo';
+export * from './DisplayProject';
+export * from './CalcBasic';
+export * from './ToDoApp';
+export * from './BreweryApp';
+export * from './WeatherApp';
