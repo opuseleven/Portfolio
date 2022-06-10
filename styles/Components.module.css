@@ -1,0 +1,14 @@
+.projectbuttoncontainer {
+  display: flex;
+  flex-direction: row;
+}
+.projectbutton {
+  width: 8vw;
+  height: 4vh;
+  color: blue;
+}
+.selectedprojectbutton {
+  width: 8vw;
+  height: 4vh;
+  color: green;
+}
