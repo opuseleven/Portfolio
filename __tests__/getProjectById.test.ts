@@ -6,7 +6,7 @@ describe('getProjectById service', () => {
 
   it('Returns a valid project from id', () => {
     const test1 = getProjectById(projectData, 2);
-    expect(test1.component).toBe('todo-app');
+    expect(test1.name).toBe('To Do App');
   })
 
   it('Returns an error for nonvalid id', () => {
