@@ -8,7 +8,7 @@ describe('DisplayProject component', () => {
 
   it('Component renders', () => {
     render(<DisplayProject project={projects[0]} />);
-    expect(screen.getByRole('heading')).toHaveTextContent('Calculator goes here')
+    expect(screen.getByRole('heading')).toHaveTextContent('0')
   })
   it('Changes with project prop', () => {
     render(<DisplayProject project={projects[1]} />);
