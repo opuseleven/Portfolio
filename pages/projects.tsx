@@ -1,4 +1,5 @@
 import type { NextPage } from 'next';
+import Head from 'next/head';
 import { Banner, Toolbar, ProjectSelector, ProjectInfo, DisplayProject } from '../components';
 import { Project } from '../types';
 import { getProjectById } from '../services';
@@ -20,21 +21,31 @@ const Projects: NextPage = () => {
   return (
     <div>
 
-      <Banner />
+      <Head>
+        <title>Cody Clark's Development Portfolio - Projects</title>
+        <meta name="description" content="Cody Clark's Development Portfolio Projects page" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
 
-      <Toolbar />
+      <main>
 
-      <h3>Projects</h3>
+        <Banner />
 
-      <div>
+        <Toolbar />
 
-        <ProjectSelector selectedId={selectedId} setSelectedId={setSelectedId} />
+        <h3>Projects</h3>
 
-        <ProjectInfo project={selectedProject} />
+        <div>
 
-        <DisplayProject project={selectedProject} />
+          <ProjectSelector selectedId={selectedId} setSelectedId={setSelectedId} />
 
-      </div>
+          <ProjectInfo project={selectedProject} />
+
+          <DisplayProject project={selectedProject} />
+
+        </div>
+
+      </main>
 
     </div>
   )
