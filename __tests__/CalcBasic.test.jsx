@@ -154,6 +154,8 @@ describe('CalcBasic application component', () => {
     render(<CalcBasic />);
     act(() => {
       fireEvent.click(screen.getByText('1'));
+    })
+    act(() => {
       fireEvent.click(screen.getByText('+/-'));
     })
     expect(screen.getByRole('heading')).toHaveTextContent('-1');
