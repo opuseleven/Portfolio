@@ -12,3 +12,6 @@
   height: 4vh;
   color: green;
 }
+.githublink a :hover {
+  color: blue;
+}
