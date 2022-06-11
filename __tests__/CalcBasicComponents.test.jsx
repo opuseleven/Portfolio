@@ -86,4 +86,14 @@ describe('All CalcBasicComponent tests', () => {
     render(<SubtractButton />);
     expect(screen.getByRole('button')).toHaveTextContent('-');
   })
+
+  it('ViewScreen component renders', () => {
+    render(<ViewScreen number={0} />);
+    expect(screen.getByRole('heading')).toHaveTextContent('0');
+  })
+
+  it('ZeroButton component renders', () => {
+    render(<ZeroButton />);
+    expect(screen.getByRole('button')).toHaveTextContent('0');
+  })
 })
