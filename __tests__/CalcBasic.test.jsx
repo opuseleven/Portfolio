@@ -161,36 +161,45 @@ describe('CalcBasic application component', () => {
     expect(screen.getByRole('heading')).toHaveTextContent('-1');
   });
 
+
+
   it('EqualsButton functions', () => {
-    // fix
-    render(<EqualsButton storedNumber={storedNumber} viewedNumber={viewedNumber}
-      sign={sign} setSign={setSign} setStoredNumber={setStoredNumber}
-      setViewedNumber={setViewedNumber} setNegative={setNegative} setDecimal={setDecimal}
-    />);
+    render(<CalcBasic />);
     act(() => {
-      fireEvent.click(screen.getByRole('button'));
+      fireEvent.click(screen.getByText('9'));
     })
-    expect(viewedNumber).toBe(9);
-    expect(storedNumber).toBe(0);
-    expect(sign).toBe("");
+    expect(screen.getByRole('heading')).toHaveTextContent('9');
+    act(() => {
+      fireEvent.click(screen.getByText('+'));
+    })
+    act(() => {
+      fireEvent.click(screen.getByText('5'));
+    })
+    expect(screen.getByRole('heading')).toHaveTextContent('5');
+    act(() => {
+      fireEvent.click(screen.getByText('='));
+    })
+    expect(screen.getByRole('heading')).toHaveTextContent('14');
   })
 
   it('EqualsButton handles edge cases', () => {
     // fix
-    render(<EqualsButton storedNumber={storedNumber} viewedNumber={viewedNumber}
-      sign={sign} setSign={setSign} setStoredNumber={setStoredNumber}
-      setViewedNumber={setViewedNumber} setNegative={setNegative} setDecimal={setDecimal}
-    />);
-    viewedNumber = 7;
-    setSign("");
-    negative = true;
-    decimal = true;
+    render(<CalcBasic />);
     act(() => {
-      fireEvent.click(screen.getByRole('button'));
+      fireEvent.click(screen.getByText('7'));
     })
-    expect(viewedNumber).toBe(7);
-    expect(negative).toBe(false);
-    expect(decimal).toBe(false);
+    expect(screen.getByRole('heading')).toHaveTextContent('7');
+    act(() => {
+      fireEvent.click(screen.getByText('+/-'));
+    })
+    expect(screen.getByRole('heading')).toHaveTextContent('-7');
+    act(() => {
+      fireEvent.click(screen.getByText('.'));
+    })
+    act(() => {
+      fireEvent.click(screen.getByText('='));
+    })
+    expect(screen.getByRole('heading')).toHaveTextContent('-7');
   })
 
   it('Negative button functions', () => {
