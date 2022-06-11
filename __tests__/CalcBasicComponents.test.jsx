@@ -131,4 +131,35 @@ describe('All CalcBasicComponent tests', () => {
     expect(storedNumber).toBe(0);
     expect(sign).toBe("");
   })
+
+  it('EqualsButton checks for sign', () => {
+    render(<EqualsButton storedNumber={storedNumber} viewedNumber={viewedNumber}
+      sign={sign} setSign={setSign} setStoredNumber={setStoredNumber}
+      setViewedNumber={setViewedNumber} setNegative={setNegative} setDecimal={setDecimal}
+    />);
+    viewedNumber = 7;
+    sign = "";
+    act(() => {
+      fireEvent.click(screen.getByRole('button'));
+    })
+    expect(viewedNumber).toBe(7);
+    expect(sign).toBe("");
+  })
+
+  it('EqualsButton handles edge cases', () => {
+    render(<EqualsButton storedNumber={storedNumber} viewedNumber={viewedNumber}
+      sign={sign} setSign={setSign} setStoredNumber={setStoredNumber}
+      setViewedNumber={setViewedNumber} setNegative={setNegative} setDecimal={setDecimal}
+    />);
+    viewedNumber = 7;
+    sign = "";
+    negative = true;
+    decimal = true;
+    act(() => {
+      fireEvent.click(screen.getByRole('button'));
+    })
+    expect(viewedNumber).toBe(7);
+    expect(negative).toBe(false);
+    expect(decimal).toBe(false);
+  })
 })
