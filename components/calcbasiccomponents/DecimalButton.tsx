@@ -20,7 +20,7 @@ const DecimalButton: React.FC<DecimalButtonProps> = ({ viewedNumber, decimal, se
 
   return (
     <div className={styles.decimalbutton}>
-      <button className={styles.bluebutton} onClick={handleClick}>.</button>
+      <button className={styles.bluebutton} onClick={() => handleClick()}>.</button>
     </div>
   )
 }
