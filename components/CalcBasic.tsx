@@ -14,7 +14,7 @@ const CalcBasic: React.FC = () => {
 
 
   return (
-    <div>
+    <div className={styles.calculatorcontainer}>
       <span className={styles.calclogo}>
         Calc-Basic
       </span>
