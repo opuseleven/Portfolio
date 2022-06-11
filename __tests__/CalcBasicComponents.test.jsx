@@ -81,4 +81,9 @@ describe('All CalcBasicComponent tests', () => {
     render(<NumberButton number={7} />);
     expect(screen.getByRole('button')).toHaveTextContent('7');
   })
+
+  it('SubtractButton component renders', () => {
+    render(<SubtractButton />);
+    expect(screen.getByRole('button')).toHaveTextContent('-');
+  })
 })
