@@ -183,7 +183,6 @@ describe('CalcBasic application component', () => {
   })
 
   it('EqualsButton handles edge cases', () => {
-    // fix
     render(<CalcBasic />);
     act(() => {
       fireEvent.click(screen.getByText('7'));
@@ -203,10 +202,15 @@ describe('CalcBasic application component', () => {
   })
 
   it('Negative button functions', () => {
-    // fix
-    render(<NegativeButton handleClick={handleNegativeClick(negative, viewedNumber, setNegative, setViewedNumber)} />);
-    fireEvent.click(screen.getByText("+/-"));
-    expect(negative).toBe(true);
+    render(<CalcBasic />);
+    act(() => {
+      fireEvent.click(screen.getByText("+/-"));
+    })
+    expect(screen.getByRole('heading')).toHaveTextContent('0');
+    act(() => {
+      fireEvent.click(screen.getByText('1'));
+    })
+    expect(screen.getByRole('heading')).toHaveTextContent('-1');
   })
 
 })
