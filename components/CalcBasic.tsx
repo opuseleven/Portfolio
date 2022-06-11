@@ -50,8 +50,8 @@ const CalcBasic: React.FC = () => {
         />
         <EqualsButton storedNumber={storedNumber} viewedNumber={viewedNumber}
           sign={sign} setSign={setSign} setStoredNumber={setStoredNumber}
-          setViewedNumber={setViewedNumber} setNegative={setNegative} setDecimal={setDecimal}
-        />
+          setViewedNumber={setViewedNumber} setNegative={setNegative}
+          setDecimal={setDecimal} />
        </div>
     </div>
   )
