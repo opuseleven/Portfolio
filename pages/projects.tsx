@@ -47,6 +47,12 @@ const Projects: NextPage = () => {
 
       </main>
 
+      <footer>
+
+        <p>View the source code <a href="" target="_blank">here</a></p>
+
+      </footer>
+
     </div>
   )
 }
