@@ -1,0 +1,84 @@
+.container {
+  padding: 0 2rem;
+  background-color: #0D1117;
+}
+
+.main {
+  min-height: 100vh;
+  padding: 4rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  flex: 1;
+  padding: 2rem 0;
+  border-top: 1px solid #eaeaea;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.title a:hover,
+.title a:focus,
+.title a:active {
+  text-decoration: underline;
+}
+
+.title {
+  color: #EFEFEF;
+  margin: 0;
+  line-height: 1.15;
+  font-size: 4rem;
+  padding-bottom: 10vh;
+}
+
+.title,
+.description {
+  text-align: center;
+}
+
+.newtodobuttoncontainer {
+
+}
+.newtodobutton {
+
+}
+.todoviewcontainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.todoinputcontainer {
+  padding: 16px;
+}
+.todoinput {
+  font-size: 24px;
+  border-style: hidden;
+}
+.completedbuttoncontainer {
+  padding: 16px;
+}
+.checkbox {
+  width: 24px;
+  height: 24px;
+}
+.deletebutton {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  font-size: 12px;
+}
+.todolist {
+  padding-bottom: 16px;
+}
