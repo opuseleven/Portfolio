@@ -52,5 +52,16 @@ describe('All ToDoApp services tests', () => {
   it('removeToDo service removes ToDo from arr', () => {
     removeToDo(testToDo4, testArr, setArr);
     expect(arr.length).toBe(4);
+    expect(arr).toEqual([testToDo1, testToDo2, testToDo3, testToDo5]);
+  })
+
+  it('updateCompleted updates ToDo.value prop', () => {
+    updateCompleted(testToDo5, !testToDo5.completed);
+    expect(testToDo5.completed).toBe(false);
+  })
+
+  it('updateToDo service updates ToDo.name prop', () => {
+    updateToDo(testToDo2, 'do something else again');
+    expect(testToDo2.name).toBe('do something else again');
   })
 })
