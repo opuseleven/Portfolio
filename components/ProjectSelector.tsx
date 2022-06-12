@@ -15,7 +15,7 @@ const ProjectSelector: React.FC<ProjectSelectorProps> = ({ selectedId, setSelect
   }, [selectedId])
 
   return (
-    <div>
+    <div className={styles.projectbuttoncontainer}>
 
       <button onClick={() => setSelectedId(1)}
         className={id === 1 ? styles.selectedprojectbutton : styles.projectbutton}

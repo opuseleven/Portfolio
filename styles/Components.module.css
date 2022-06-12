@@ -1,17 +1,44 @@
+.bannercontainer {
+  min-width: 64vw;
+}
+.toolbar {
+  min-height: 4vh;
+  padding-bottom: 24px;
+}
+.navbutton {
+  min-height: 4vh;
+  min-width: 16vw;
+  border-radius: 10px;
+  background-color: #d8dee9;
+}
+.navbutton:hover {
+  background-color: white;
+  cursor: pointer;
+}
 .projectbuttoncontainer {
   display: flex;
   flex-direction: row;
 }
 .projectbutton {
-  width: 8vw;
-  height: 4vh;
-  color: blue;
+  width: 10vw;
+  height: 8vh;
+  color: black;
+  background-color: #e5f4fb;
+}
+.projectbutton:hover {
+  background-color: white;
+  cursor: pointer;
 }
 .selectedprojectbutton {
-  width: 8vw;
-  height: 4vh;
-  color: green;
+  width: 10vw;
+  height: 8vh;
+  color: black;
+  background-color: #88B04B;
+}
+.selectedprojectbutton:hover {
+  cursor: pointer;
+  background-color: #94d82d;
 }
 .githublink a :hover {
-  color: blue;
+  text-decoration: underline;
 }

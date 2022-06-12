@@ -4,6 +4,7 @@ import { Banner, Toolbar, ProjectSelector, ProjectInfo, DisplayProject } from '.
 import { Project } from '../types';
 import { getProjectById } from '../services';
 import { useState, useEffect } from 'react';
+import styles from '../styles/Projects.module.css';
 
 const Projects: NextPage = () => {
 
@@ -19,7 +20,7 @@ const Projects: NextPage = () => {
 
 
   return (
-    <div>
+    <div className={styles.container}>
 
       <Head>
         <title>Cody Clark's Development Portfolio - Projects</title>
@@ -27,15 +28,15 @@ const Projects: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
+      <main className={styles.main}>
 
         <Banner />
 
         <Toolbar />
 
-        <h3>Projects</h3>
+        <h3 className={styles.projectstitle}>Projects</h3>
 
-        <div>
+        <div className={styles.projectcontainer}>
 
           <ProjectSelector selectedId={selectedId} setSelectedId={setSelectedId} />
 
@@ -47,7 +48,7 @@ const Projects: NextPage = () => {
 
       </main>
 
-      <footer>
+      <footer className={styles.footer}>
 
         <p>View the source code <a href="" target="_blank">here</a></p>
 
