@@ -68,4 +68,24 @@ describe('All BreweryApp component tests', () => {
     expect(screen.getByRole('button')).toHaveTextContent('Submit');
   })
 
+  let stateFilter = '';
+  function setStateFilter(str) {
+    stateFilter = str;
+  }
+
+  it('StateSelector component renders', () => {
+    render(<StateSelector setStateFilter={setStateFilter} />);
+    const options = screen.getAllByRole('option');
+    expect(options[0]).toHaveTextContent('--select state--');
+    expect(options[1]).toHaveTextContent('Alabama');
+  })
+
+  it('StateSelector changes state value', () => {
+    render(<StateSelector setStateFilter={setStateFilter} />);
+    const selector = screen.getByRole('combobox');
+    act(() => {
+      fireEvent.change(selector, {target: {value: "alaska"}});
+    })
+    expect(stateFilter).toBe('alaska');
+  })
 })
