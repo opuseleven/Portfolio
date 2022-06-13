@@ -10,7 +10,7 @@ const WeatherApp: React.FC = () => {
   const [citySearch, setCitySearch] = useState<string>("Nashville");
   const tempData: ApiData = require('../data/weathertestdata.json');
   const [data, setData] = useState<ApiData>(tempData);
-  const apiKey = process.env.REACT_APP_API_KEY;
+  const apiKey = process.env.WEATHERAPP_API_KEY;
   const searchInput = useField('text');
 
   function refreshData() {
