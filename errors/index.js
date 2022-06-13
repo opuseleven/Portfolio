@@ -1,2 +1,2 @@
-export * from './projectNotFoundError';
+export * from './ProjectNotFoundError';
 export * from './BreweryError';
