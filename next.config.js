@@ -3,6 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   env: {
     ACCESSTOKEN: process.env.ACCESSTOKEN,
+    WEATHERAPP_API_KEY: process.env.WEATHERAPP_API_KEY,
   },
 }
 
