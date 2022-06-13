@@ -1,5 +1,5 @@
 import { BreweryTypeFilters, Filters, ListMapSwitch, MapContainer, PopupContents,
-  RenderBrewery, RenderPopup, SearchForm, StateSelector } from '../components/brewerycomponents';
+  RenderBrewery, SearchForm, StateSelector } from '../components/brewerycomponents';
 import { render, screen, act, fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import { filterByHasCoordinates, getBrewery } from '../services/breweryservices';
@@ -62,4 +62,10 @@ describe('All BreweryApp component tests', () => {
     expect(screen.getByRole('heading')).toHaveTextContent('Test Brewery');
     expect(screen.getByRole('link')).toHaveTextContent('www.duckduckgo.com');
   })
+
+  it('SearchForm component renders', () => {
+    render(<SearchForm />);
+    expect(screen.getByRole('button')).toHaveTextContent('Submit');
+  })
+
 })
