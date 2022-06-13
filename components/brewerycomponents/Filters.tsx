@@ -1,4 +1,4 @@
-import styles from '../styles/Components.module.css';
+import styles from '../../styles/Brewery.module.css';
 import { StateSelector, BreweryTypeFilters } from '.';
 import { TypeFilterState } from '../../types';
 import { useState } from 'react';
