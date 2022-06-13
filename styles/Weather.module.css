@@ -88,6 +88,26 @@
     background-color: #282c34;
 }
 
+.infocontainer {
+  justify-content: center;
+  display: flex;
+}
+
+.formcontainer {
+  justify-content: center;
+  display: flex;
+}
+
+.citydisplaycontainer {
+  justify-content: center;
+  display: flex;
+}
+
+.footercontainer {
+  justify-content: center;
+  display: flex;
+}
+
 .card:hover,
 .card:focus,
 .card:active {

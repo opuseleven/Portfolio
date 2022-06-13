@@ -35,18 +35,18 @@ const WeatherApp: React.FC = () => {
         <div className={styles.title}>
           <h1>WeatherApp</h1>
         </div>
-        <div>
+        <div className={styles.infocontainer}>
           <Info />
         </div>
 
-        <div>
+        <div className={styles.formcontainer}>
           <form onSubmit={handleClick}>
             <input {...searchInput} />
             <button>Search</button>
           </form>
         </div>
 
-        <div>
+        <div className={styles.citydisplaycontainer}>
           {data && (
             <CityDisplay  data={data} />
           )}
@@ -59,7 +59,9 @@ const WeatherApp: React.FC = () => {
           }
         </div>
       </div>
-      <WeatherFooter />
+      <div className={styles.footercontainer}>
+        <WeatherFooter />
+      </div>
     </div>
   )
 }
