@@ -1,7 +1,7 @@
 import styles from '../styles/Brewery.module.css';
 import { Brewery, TypeFilterState } from '../types';
 import { useState, useEffect } from 'react';
-import { SearchForm, RenderBrewery, Filters, ListMapSwitch, MapContainer } from '../components';
+import { SearchForm, RenderBrewery, Filters, ListMapSwitch, MapContainer } from './brewerycomponents';
 import { filterByType, typeFilterCheck, filterByHasCoordinates } from '../services';
 
 const BreweryApp: React.FC = () => {
@@ -76,7 +76,7 @@ const BreweryApp: React.FC = () => {
           </div>
 
           <ListMapSwitch showMap={showMap} setShowMap={setShowMap} />
-          
+
         </div>
 
         <div>
