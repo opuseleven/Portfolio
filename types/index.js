@@ -5,3 +5,4 @@ export * from './TypeFilterState';
 export * from './ApiData';
 export * from './WeatherData';
 export * from './Day';
+export * from './City';
