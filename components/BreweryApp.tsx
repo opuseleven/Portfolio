@@ -2,7 +2,7 @@ import styles from '../styles/Brewery.module.css';
 import { Brewery, TypeFilterState } from '../types';
 import { useState, useEffect } from 'react';
 import { SearchForm, RenderBrewery, Filters, ListMapSwitch, MapContainer } from './brewerycomponents';
-import { filterByType, typeFilterCheck, filterByHasCoordinates } from '../services';
+import { filterByType, typeFilterCheck, filterByHasCoordinates } from '../services/breweryservices';
 
 const BreweryApp: React.FC = () => {
 
