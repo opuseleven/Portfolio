@@ -213,4 +213,76 @@ describe('CalcBasic application component', () => {
     expect(screen.getByRole('heading')).toHaveTextContent('-1');
   })
 
+  it('Add button functions', () => {
+    render(<CalcBasic />);
+    act(() => {
+      fireEvent.click(screen.getByText('2'));
+    })
+    expect(screen.getByRole('heading')).toHaveTextContent('2');
+    act(() => {
+      fireEvent.click(screen.getByText('+'));
+    })
+    act(() => {
+      fireEvent.click(screen.getByText('5'));
+    })
+    expect(screen.getByRole('heading')).toHaveTextContent('5');
+    act(() => {
+      fireEvent.click(screen.getByText('='));
+    })
+    expect(screen.getByRole('heading')).toHaveTextContent('7');
+  })
+
+  it('Subtract button functions', () => {
+    render(<CalcBasic />);
+    act(() => {
+      fireEvent.click(screen.getByText('3'));
+    })
+    expect(screen.getByRole('heading')).toHaveTextContent('3');
+    act(() => {
+      fireEvent.click(screen.getByText('-'));
+    })
+    act(() => {
+      fireEvent.click(screen.getByText('1'));
+    })
+    act(() => {
+      fireEvent.click(screen.getByText('='));
+    })
+    expect(screen.getByRole('heading')).toHaveTextContent('2');
+  })
+
+  it('Divide button functions', () => {
+    render(<CalcBasic />);
+    act(() => {
+      fireEvent.click(screen.getByText('8'));
+    })
+    expect(screen.getByRole('heading')).toHaveTextContent('8');
+    act(() => {
+      fireEvent.click(screen.getByText('/'));
+    })
+    act(() => {
+      fireEvent.click(screen.getByText('2'));
+    })
+    act(() => {
+      fireEvent.click(screen.getByText('='));
+    })
+    expect(screen.getByRole('heading')).toHaveTextContent('4');
+  })
+
+  it('Multiply button functions', () => {
+    render(<CalcBasic />);
+    act(() => {
+      fireEvent.click(screen.getByText('7'));
+    })
+    expect(screen.getByRole('heading')).toHaveTextContent('7');
+    act(() => {
+      fireEvent.click(screen.getByText('x'));
+    })
+    act(() => {
+      fireEvent.click(screen.getByText('3'));
+    })
+    act(() => {
+      fireEvent.click(screen.getByText('='));
+    })
+    expect(screen.getByRole('heading')).toHaveTextContent('21');
+  })
 })
