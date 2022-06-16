@@ -1,7 +1,8 @@
 import styles from '../../styles/Calculator.module.css';
 
 interface SubtractButtonProps {
-  handleClick: VoidFunction
+  handleClick: VoidFunction,
+  sign: string
 }
 
 const SubtractButton: React.FC<SubtractButtonProps> = ({ handleClick }) => {

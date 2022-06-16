@@ -1,7 +1,8 @@
 import styles from '../../styles/Calculator.module.css';
 
 interface DivideButtonProps {
-  handleClick: VoidFunction
+  handleClick: VoidFunction,
+  sign: string
 }
 
 const DivideButton: React.FC<DivideButtonProps> = ({ handleClick }) => {

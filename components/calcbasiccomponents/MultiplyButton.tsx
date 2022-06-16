@@ -1,7 +1,8 @@
 import styles from '../../styles/Calculator.module.css';
 
 interface MultiplyButtonProps {
-  handleClick: VoidFunction
+  handleClick: VoidFunction,
+  sign: string
 }
 
 const MultiplyButton: React.FC<MultiplyButtonProps> = ({ handleClick }) => {
