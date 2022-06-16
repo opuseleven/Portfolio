@@ -67,6 +67,15 @@
   background-color: #fff85b;
 }
 
+.selectedsignbutton {
+  min-width: 10vw;
+  width: inherit;
+  min-height: 10vh;
+  background-color: #e8590c;
+  font-size: 16px;
+  font-weight: bold;
+}
+
 .clearbuttoncontainer {
   grid-column: 1/3;
   grid-row: 1;
