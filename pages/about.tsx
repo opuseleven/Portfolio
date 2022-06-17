@@ -26,6 +26,11 @@ const AboutMe: NextPage = () => {
           The about me section will go here.
         </p>
 
+        <Image src='/../public/about-images/CodyProfilePic.png'
+          alt='An image of Cody, as seen sitting in a field.'
+          width={800} height={480}
+        />
+
       </main>
 
       <footer className={styles.footer}>
