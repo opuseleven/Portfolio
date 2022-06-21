@@ -1,5 +1,5 @@
 import { Project } from '../types';
-import { CalcBasic, ToDoApp, BreweryApp, WeatherApp } from '../components';
+import { CalcBasic, ToDoApp, BreweryApp, WeatherApp, RecordDataSearchApp } from '../components';
 import styles from '../styles/Components.module.css';
 
 interface DisplayProjectProps {
@@ -39,6 +39,14 @@ const DisplayProject: React.FC<DisplayProjectProps> = ({ project }) => {
         {
           project.id === 4 && (
             <WeatherApp />
+          )
+        }
+      </div>
+
+      <div>
+        {
+          project.id === 5 && (
+            <RecordDataSearchApp />
           )
         }
       </div>
