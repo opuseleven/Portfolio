@@ -41,6 +41,12 @@ const ProjectSelector: React.FC<ProjectSelectorProps> = ({ selectedId, setSelect
         Weather App
       </button>
 
+      <button onClick={() => setSelectedId(5)}
+        className={id === 5 ? styles.selectedprojectbutton : styles.projectbutton}
+      >
+        RecordDataSearch
+      </button>
+
     </div>
   )
 }
