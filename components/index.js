@@ -7,3 +7,4 @@ export * from './CalcBasic';
 export * from './ToDoApp';
 export * from './BreweryApp';
 export * from './WeatherApp';
+export * from './RecordDataSearchApp';
