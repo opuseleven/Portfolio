@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Artist } from '../types';
-import { ArtistNotFoundError } from '../errors';
+import { ArtistNotFoundError, RecordDataError } from '../errors';
+import { filterByArtists, artistMatch, getReleasesUrl } from '../services/recordappservices';
 import styles from '../styles/RecordApp.module.css';
 
 const RecordDataSearchApp: React.FC = () => {
@@ -30,7 +31,7 @@ const RecordDataSearchApp: React.FC = () => {
           .then((res) => setData(res.data.results))
           .catch((err) => {
             console.log(err);
-            const error = dataError();
+            const error = RecordDataError();
             setData(error);
           });
       }
