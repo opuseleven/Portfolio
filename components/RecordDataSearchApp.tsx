@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Artist } from '../types';
+import { SearchBar, ResultsContainer } from '../components/recordappcomponents';
 import { ArtistNotFoundError, RecordDataError } from '../errors';
 import { filterByArtists, artistMatch, getReleasesUrl } from '../services/recordappservices';
 import styles from '../styles/RecordApp.module.css';
