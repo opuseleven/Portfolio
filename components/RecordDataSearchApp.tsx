@@ -1,12 +1,14 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import { Artist } from '../types';
+import { ArtistNotFoundError } from '../errors';
 import styles from '../styles/RecordApp.module.css';
 
 const RecordDataSearchApp: React.FC = () => {
 
   const [artistSearch, setArtistSearch] = useState<string>('');
 
-    const defaultArtist = artistNotFoundError();
+    const defaultArtist = ArtistNotFoundError();
 
     const [artist, setArtist] = useState<Artist>();
     const [data, setData] = useState<Object[]>([]);
