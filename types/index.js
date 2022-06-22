@@ -7,3 +7,4 @@ export * from './WeatherData';
 export * from './Day';
 export * from './City';
 export * from './Artist';
+export * from './Release';
