@@ -14,3 +14,4 @@ export * from './Format';
 export * from './Track';
 export * from './ExtraArtist';
 export * from './ReleaseImg';
+export * from './Pagination';
