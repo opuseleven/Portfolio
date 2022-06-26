@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import styles from '../../styles/Components.module.css';
+import styles from '../../styles/RecordApp.module.css';
 
 interface SearchBarProps {
   setArtistSearch: React.Dispatch<React.SetStateAction<string>>

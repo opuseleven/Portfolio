@@ -1,7 +1,7 @@
 import { Release, DetailedRelease } from '../../types';
 import { useState, useEffect } from 'react';
 import { DisplayDetailedRelease } from '.';
-import styles from '../styles/Components.module.css';
+import styles from '../../styles/RecordApp.module.css';
 import axios from 'axios';
 
 interface DisplayReleaseProps {
@@ -42,7 +42,8 @@ const DisplayRelease: React.FC<DisplayReleaseProps> = ({ release }) => {
         <li className={styles.detaillistitem}>Release Year: {displayedRelease.year}</li>
         <li className={styles.detaillistitem}>Format: {displayedRelease.format}</li>
         <li className={styles.detaillistitem}>
-          <a className={styles.discoglink} href={displayedRelease.resource_url} target='_blank'>
+          <a className={styles.discoglink} href={displayedRelease.resource_url}
+            target='_blank' rel="noreferrer">
             View raw data
           </a>
         </li>

@@ -1,7 +1,7 @@
 import { DetailedRelease } from '../../types';
 import { RenderDiscogObj, RenderExtraArtist, RenderTrack } from '.';
 import { useState, useEffect } from 'react';
-import styles from '../styles/Components.module.css';
+import styles from '../../styles/RecordApp.module.css';
 
 interface DisplayDetailedReleaseProps {
   detailedRelease: DetailedRelease
@@ -35,7 +35,7 @@ const DisplayDetailedRelease: React.FC<DisplayDetailedReleaseProps> = ({ detaile
           <li>Country: {release.country}</li>
           <li>Genres: {release.genres}</li>
           <li className={styles.discoglink}>
-            <a target='_blank' href={release.uri}>
+            <a target='_blank' href={release.uri} rel="noreferrer">
               View on Discogs
             </a>
           </li>
