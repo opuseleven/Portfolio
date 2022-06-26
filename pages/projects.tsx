@@ -23,8 +23,8 @@ const Projects: NextPage = () => {
     <div className={styles.container}>
 
       <Head>
-        <title>Cody Clark's Development Portfolio - Projects</title>
-        <meta name="description" content="Cody Clark's Development Portfolio Projects page" />
+        <title>Cody Clark&#39;s Development Portfolio - Projects</title>
+        <meta name="description" content="Cody Clark&#39;s Development Portfolio Projects page" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -50,7 +50,8 @@ const Projects: NextPage = () => {
 
       <footer className={styles.footer}>
 
-        <p>View the source code <a href="" target="_blank">here</a></p>
+        <p>View the source code <a href="" target="_blank" rel="noreferrer">here</a>
+        </p>
 
       </footer>
 
