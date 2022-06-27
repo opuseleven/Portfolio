@@ -11,7 +11,11 @@ const PopupContents: React.FC<PopupContentsProps> = ({ brewery }) => {
       <h4>{brewery.name}</h4>
       <ul>
         <li>Type: {brewery.brewery_type}</li>
-        <li><a href={brewery.website_url} target="_blank">{brewery.website_url}</a></li>
+        <li>
+          <a href={brewery.website_url} target="_blank" rel="noreferrer">
+            {brewery.website_url}
+          </a>
+        </li>
       </ul>
       <p>{brewery.street}</p>
       <p>{brewery.city}, {brewery.state}</p>
