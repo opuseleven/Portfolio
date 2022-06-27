@@ -26,8 +26,8 @@ const RenderPopup: React.FC<RenderPopupProps> = ({ brewery, showPopup, setShowPo
       {
         popup && (
           <Popup
-            longitude={brewery.longitude}
-            latitude={brewery.latitude}
+            longitude={brewery.longitude ? brewery.longitude : -1}
+            latitude={brewery.latitude ? brewery.latitude : -1}
             anchor="top"
             onClose={() => handleClose}
           >
