@@ -66,7 +66,7 @@ const RecordDataSearchApp: React.FC = () => {
             {
               !artist && (
                 <h3 className={styles.info}>
-                  Search by name of musical artist to see info on the artist's full discography. Spelling must be exact.
+                  Search by name of musical artist to see info on the artist&#39;s full discography. Spelling must be exact.
                 </h3>
               )
             }
@@ -83,7 +83,8 @@ const RecordDataSearchApp: React.FC = () => {
         </div>
 
         <footer className={styles.footer}>
-          <p>Data provided by Discogs</p>
+          <p>Data provided by <a href='www.discogs.com' target="_blank" rel="noreferrer">Discogs</a>
+          </p>
         </footer>
       </div>
     )

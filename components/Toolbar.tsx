@@ -17,7 +17,7 @@ const Toolbar: React.FC = () => {
         <button className={styles.navbutton}>Projects</button>
       </Link>
 
-      <a href='https://github.com/opuseleven' target='_blank'>
+      <a href='https://github.com/opuseleven' target='_blank' rel="noreferrer">
         <button className={styles.navbutton}>GitHub</button>
       </a>
 
