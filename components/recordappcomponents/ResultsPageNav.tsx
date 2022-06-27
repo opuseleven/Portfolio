@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Pagination } from '../../types';
-import styles from '../../styles/Components.module.css';
+import styles from '../../styles/RecordApp.module.css';
 
 interface ResultsPageNavProps {
   page: number,

@@ -1,6 +1,6 @@
 import { DiscogObj } from '../../types';
 import { useState, useEffect } from 'react';
-import styles from '../styles/Components.module.css';
+import styles from '../../styles/RecordApp.module.css';
 
 interface RenderDiscogObjProps {
   obj: DiscogObj
