@@ -73,7 +73,7 @@ describe('ToDoApp component', () => {
     expect(headings[1].value).toBe('three');
   })
 
-  it('Clicking checkbox sorts list by completed', () => {
+  it('Clicking checkbox sorts list by completed', async () => {
     render(<ToDoApp />);
     let headings = screen.getAllByRole('textbox');
     let buttons = screen.getAllByRole('button');
@@ -95,7 +95,7 @@ describe('ToDoApp component', () => {
     expect(headings[2].value).toBe('three');
     expect(headings.length).toBe(3);
     let checkboxes = screen.getAllByRole('checkbox');
-    act(async () => {
+    await act(async () => {
       fireEvent.click(checkboxes[1]);
       await new Promise(r => setTimeout(r, 1000));
     })
