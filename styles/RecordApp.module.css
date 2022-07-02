@@ -375,3 +375,31 @@
   color: black;
   align-self: flex-end;
 }
+
+.footertext {
+  color: black;
+}
+
+.footertextdark {
+  color: white;
+}
+
+.footertext a{
+  color: black;
+  text-decoration: underline;
+}
+
+.footertextdark a{
+  color: white;
+  text-decoration: underline;
+}
+
+.footertext a:hover {
+  color: blue;
+  cursor: pointer;
+}
+
+.footertextdark a:hover {
+  color: yellow;
+  cursor: pointer;
+}
