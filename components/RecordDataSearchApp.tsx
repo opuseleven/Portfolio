@@ -86,7 +86,7 @@ const RecordDataSearchApp: React.FC = () => {
       </div>
 
       <footer className={darkMode ? styles.footerdark : styles.footer}>
-        <p>
+        <p className={darkMode ? styles.footertextdark : styles.footertext}>
           Data provided by <a href='www.discogs.com' target="_blank" rel="noreferrer">Discogs</a>
         </p>
       </footer>
