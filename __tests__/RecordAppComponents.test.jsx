@@ -1,6 +1,6 @@
 import { ArtistDetails, DisplayDetailedRelease, DisplayRelease, ReleaseDetails,
   RenderDiscogObj, RenderExtraArtist, RenderTrack, ResultsContainer, SearchBar,
-  ResultsPageNav } from '../components/recordappcomponents';
+  ResultsPageNav, SettingsToolbar, DarkModeButton } from '../components/recordappcomponents';
 import { defaultPagination } from '../types';
 import { render, screen, act, fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom';
@@ -126,5 +126,37 @@ describe('All RecordDataSearchApp Component tests', () => {
   it('SearchBar component renders', () => {
     render(<SearchBar />);
     expect(screen.getByRole('button')).toHaveTextContent('Search');
+  })
+
+  it('SettingsToolbar component renders', () => {
+    render(<SettingsToolbar />);
+    expect(screen.getByRole('button')).toHaveTextContent('☾');
+  })
+
+  let darkMode = false;
+  function setDarkMode(bool) {
+    darkMode = bool;
+  }
+
+  it('SettingsToolbar functions', () => {
+    render(<SettingsToolbar darkMode={darkMode} setDarkMode={setDarkMode} />);
+    act(() => {
+      fireEvent.click(screen.getByRole('button'));
+    })
+    expect(darkMode).toBe(true);
+  })
+
+  it('DarkModeButton component renders', () => {
+    render(<DarkModeButton darkMode={darkMode} setDarkMode={setDarkMode} />);
+    expect(screen.getByRole('button')).toHaveTextContent('☾');
+  })
+
+  it('DarkModeButton component functions to toggle darkMode', () => {
+    darkMode = false;
+    render(<DarkModeButton darkMode={darkMode} setDarkMode={setDarkMode} />);
+    act(() => {
+      fireEvent.click(screen.getByRole('button'));
+    })
+    expect(darkMode).toBe(true);
   })
 })
