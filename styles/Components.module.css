@@ -20,7 +20,7 @@
   flex-direction: row;
 }
 .projectbutton {
-  width: 10vw;
+  width: 16vw;
   height: 8vh;
   color: black;
   background-color: #e5f4fb;
@@ -30,7 +30,7 @@
   cursor: pointer;
 }
 .selectedprojectbutton {
-  width: 10vw;
+  width: 16vw;
   height: 8vh;
   color: black;
   background-color: #88B04B;
