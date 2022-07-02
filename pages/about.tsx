@@ -35,7 +35,8 @@ const AboutMe: NextPage = () => {
 
       <footer className={styles.footer}>
 
-        <p>View the source code <a href="" target="_blank">here</a></p>
+        <p>View the source code <a href="https://github.com/opuseleven/Portfolio/blob/main/pages/about.tsx"
+          target="_blank">here</a></p>
 
       </footer>
 

@@ -50,7 +50,8 @@ const Projects: NextPage = () => {
 
       <footer className={styles.footer}>
 
-        <p>View the source code <a href="" target="_blank" rel="noreferrer">here</a>
+        <p>View the source code <a href="https://github.com/opuseleven/Portfolio/blob/main/pages/projects.tsx"
+          target="_blank" rel="noreferrer">here</a>
         </p>
 
       </footer>
