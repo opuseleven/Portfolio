@@ -23,7 +23,7 @@ const AboutMe: NextPage = () => {
         <h3>About Me</h3>
 
         <p>
-          Welcome to my development portfolio! I'm Cody, a folk musician living in Nashville, Tennessee. I'm passionate about new technologies and developing modern, interactive web applications with React, and Typescript.
+          Welcome to my development portfolio! I&#39;m Cody, a folk musician living in Nashville, Tennessee. I&#39;m passionate about new technologies and developing modern, interactive web applications with React, and Typescript.
         </p>
 
         <Image src='/../public/about-images/CodyProfilePic.png'
