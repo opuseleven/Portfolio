@@ -1,5 +1,5 @@
 import styles from '../styles/Brewery.module.css';
-import { Brewery, TypeFilterState } from '../types';
+import { Brewery, TypeFilterState, defaultTypeFilterState } from '../types';
 import { useState, useEffect } from 'react';
 import { SearchForm, RenderBrewery, Filters, ListMapSwitch, MapContainer } from './brewerycomponents';
 import { filterByType, typeFilterCheck, filterByHasCoordinates } from '../services/breweryservices';
@@ -12,15 +12,7 @@ const BreweryApp: React.FC = () => {
   const [showMap, setShowMap] = useState(false);
   const [selectedBrewery, setSelectedBrewery] = useState<Brewery>();
 
-  const defaultTypeFilter: TypeFilterState = {
-    micro: false,
-    brewpub: false,
-    contract: false,
-    large: false,
-    regional: false
-  }
-
-  const [typeFilterState, setTypeFilterState] = useState<TypeFilterState>(defaultTypeFilter);
+  const [typeFilterState, setTypeFilterState] = useState<TypeFilterState>(defaultTypeFilterState);
   const [stateFilter, setStateFilter] = useState('');
 
   useEffect(() => {
@@ -29,7 +21,7 @@ const BreweryApp: React.FC = () => {
     if (stateFilter !== '') {
       const stateFiltered = originalArray.filter(brewery => brewery.state.toLowerCase() === stateFilter);
       setDisplayedBreweries(stateFiltered);
-      if (typeFilterState !== defaultTypeFilter) {
+      if (typeFilterState !== defaultTypeFilterState) {
         const typeFiltered = filterByType(typeFilterState, stateFiltered);
         setDisplayedBreweries(typeFiltered);
       }
