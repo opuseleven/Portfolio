@@ -84,7 +84,7 @@ const BreweryApp: React.FC = () => {
           {
             displayedBreweries && (
               displayedBreweries.map(b => (
-                <div key={b.obdb_id.toString()}>
+                <div key={b.obdb_id ? b.obdb_id.toString() : null}>
                   <RenderBrewery brewery={b} selectedBrewery={selectedBrewery} setSelectedBrewery={setSelectedBrewery} />
                 </div>
               ))
