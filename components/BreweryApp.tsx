@@ -42,7 +42,7 @@ const BreweryApp: React.FC = () => {
 }, [breweries, showMap]);
 
   return (
-    <div>
+    <div className={styles.container}>
       <h1>BreweryApp</h1>
 
       <div>
@@ -57,7 +57,7 @@ const BreweryApp: React.FC = () => {
 
             <div>
 
-              <button onClick={() => setShowFilters(!showFilters)}>Filters</button>
+              <button onClick={() => setShowFilters(!showFilters)}>Filters  { showFilters ? String.fromCharCode(9662) : String.fromCharCode(9656)}</button>
 
             </div>
             {
