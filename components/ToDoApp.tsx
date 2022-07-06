@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { ToDo } from '../types';
 import { AddToDoButton, ToDoListContainer } from '../components/todocomponents';
+import styles from '../styles/ToDo.module.css';
 
 const ToDoApp: React.FC = () => {
 
@@ -15,7 +16,7 @@ const ToDoApp: React.FC = () => {
   const [arr, setArr] = useState<ToDo[]>(defaultList);
 
   return (
-    <div>
+    <div className={styles.todoappcontainer}>
       <h1>ToDoApp</h1>
 
       <div>
