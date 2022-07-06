@@ -8,7 +8,7 @@ interface ProjectInfoProps {
 const ProjectInfo: React.FC<ProjectInfoProps> = ({ project }) => {
 
   return (
-    <div>
+    <div className={styles.projectinfocontainer}>
 
       <h4>{project.name}</h4>
 

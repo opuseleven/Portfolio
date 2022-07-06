@@ -40,9 +40,13 @@ const Projects: NextPage = () => {
 
           <ProjectSelector selectedId={selectedId} setSelectedId={setSelectedId} />
 
-          <ProjectInfo project={selectedProject} />
+          <div className={styles.projectdetailcontainer}>
 
-          <DisplayProject project={selectedProject} />
+            <ProjectInfo project={selectedProject} />
+
+            <DisplayProject project={selectedProject} />
+
+          </div>
 
         </div>
 

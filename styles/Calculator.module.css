@@ -16,9 +16,12 @@
   border-style: solid;
   border-radius: 8px;
   border-color: black;
+  background-color: #f08c00;
   display: flex;
   flex-direction: column;
+  min-width: 32vw;
   max-width: 44vw;
+  padding: 4px;
 }
 
 .calclogo {
@@ -40,10 +43,12 @@
   margin: 20px;
   display: flex;
   justify-content: flex-end;
+  background-color: #e5e9f0;
 }
 
 .viewednumberheader {
   margin-right: 10px;
+  color: black;
 }
 
 .button {
@@ -82,11 +87,12 @@
 }
 
 .clearbutton {
-  width: 22vw;
+  width: 20vw;
   height: 10vh;
   background-color: #B94E48;
   font-size: 16px;
   font-weight: bold;
+  margin-left: 8px;
 }
 
 .clearbutton:hover {
@@ -99,11 +105,12 @@
   background-color: inherit;
   font-size: 16px;
   font-weight: bold;
+  min-width: 10vw;
+  min-height: 10vh;
 }
 
 .bluebutton {
   min-width: 10vw;
-  width: inherit;
   min-height: 10vh;
   background-color: #88c0d0;
   font-size: 16px;
@@ -117,12 +124,16 @@
 .dividebutton {
   grid-column: 4/5;
   grid-row: 1;
+  min-width: 10vw;
+  min-height: 10vh;
+  margin-right: 8px;
 }
 
 .button7 {
   grid-column: 1/2;
   grid-row: 2;
   background-color: inherit;
+  margin-left: 8px;
 }
 
 .button8 {
@@ -141,12 +152,14 @@
   grid-column: 4/5;
   grid-row: 2;
   background-color: inherit;
+  margin-right: 8px;
 }
 
 .button4 {
   grid-column: 1/2;
   grid-row: 3;
   background-color: inherit;
+  margin-left: 8px;
 }
 
 .button5 {
@@ -165,12 +178,14 @@
   grid-column: 4/5;
   grid-row: 3;
   background-color: inherit;
+  margin-right: 8px;
 }
 
 .button1 {
   grid-column: 1/2;
   grid-row: 4;
   background-color: inherit;
+  margin-left: 8px;
 }
 
 .button2 {
@@ -195,12 +210,15 @@
   grid-column: 1/2;
   grid-row: 5;
   background-color: inherit;
+  margin-left: 8px;
+  margin-bottom: 8px;
 }
 
 .decimalbutton {
   grid-column: 2/3;
   grid-row: 5;
   background-color: inherit;
+  margin-bottom: 8px;
 }
 
 .equalsbuttoncontainer {
@@ -214,6 +232,7 @@
   background-color: #a3be8c;
   font-size: 16px;
   font-weight: bold;
+  margin-bottom: 8px;
 }
 
 .equalsbutton:hover {
