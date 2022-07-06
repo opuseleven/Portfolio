@@ -20,11 +20,13 @@ const AboutMe: NextPage = () => {
 
         <Toolbar />
 
-        <h3>About Me</h3>
+        <h3 className={styles.abouttitle}>About Me</h3>
 
-        <p>
-          Welcome to my development portfolio! I&#39;m Cody, a folk musician living in Nashville, Tennessee. I&#39;m passionate about new technologies and developing modern, interactive web applications with React, and Typescript.
-        </p>
+        <div className={styles.aboutbiocontainer}>
+          <p>
+            Welcome to my development portfolio! I&#39;m Cody, a folk musician living in Nashville, Tennessee. I&#39;m passionate about new technologies and developing modern, interactive web applications with React, and Typescript.
+          </p>
+        </div>
 
         <Image src={`/about-images/CodyProfilePic.png`}
           alt='An image of Cody, as seen sitting in a field.'
