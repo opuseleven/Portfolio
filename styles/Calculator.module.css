@@ -59,28 +59,6 @@
   font-weight: bold;
 }
 
-.signbutton {
-  min-width: 10vw;
-  width: inherit;
-  min-height: 10vh;
-  background-color: #ffb300;
-  font-size: 16px;
-  font-weight: bold;
-}
-
-.signbutton:hover {
-  background-color: #fff85b;
-}
-
-.selectedsignbutton {
-  min-width: 10vw;
-  width: inherit;
-  min-height: 10vh;
-  background-color: #e8590c;
-  font-size: 16px;
-  font-weight: bold;
-}
-
 .clearbuttoncontainer {
   grid-column: 1/3;
   grid-row: 1;
@@ -107,18 +85,6 @@
   font-weight: bold;
   min-width: 10vw;
   min-height: 10vh;
-}
-
-.bluebutton {
-  min-width: 10vw;
-  min-height: 10vh;
-  background-color: #88c0d0;
-  font-size: 16px;
-  font-weight: bold;
-}
-
-.bluebutton:hover {
-  background-color: #a5d8ff;
 }
 
 .dividebutton {
@@ -237,4 +203,38 @@
 
 .equalsbutton:hover {
   background-color: #a9e34b;
+}
+
+.signbutton {
+  min-width: 10vw;
+  width: inherit;
+  min-height: 10vh;
+  background-color: #ffb300;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.signbutton:hover {
+  background-color: #fff85b;
+}
+
+.selectedsignbutton {
+  min-width: 10vw;
+  width: inherit;
+  min-height: 10vh;
+  background-color: #e8590c;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.bluebutton {
+  min-width: 10vw;
+  min-height: 10vh;
+  background-color: #88c0d0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.bluebutton:hover {
+  background-color: #a5d8ff;
 }
