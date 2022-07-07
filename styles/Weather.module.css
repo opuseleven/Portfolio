@@ -1,11 +1,13 @@
 .container {
   padding: 0 2rem;
-  background-color: #282c34;
+  border-style: solid;
+  border-color: black;
+  background-color: #2e3440;
   color: white;
 }
 
 .main {
-  min-height: 100vh;
+  min-height: 80vh;
   padding: 4rem 0;
   display: flex;
   flex-direction: column;
@@ -29,33 +31,12 @@
   flex-grow: 1;
 }
 
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
 .title {
   margin: 0;
   line-height: 1.15;
   font-size: 2.5rem;
 }
 
-.title,
-.description {
-  text-align: center;
-}
-
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
 
 .grid {
   display: flex;
@@ -63,7 +44,7 @@
   justify-content: center;
   flex-wrap: wrap;
   width: 100vw;
-  max-width: 900px;
+  max-width: 1000px;
 }
 
 .newgrid {
@@ -124,9 +105,4 @@
   margin: 0;
   font-size: 1.25rem;
   line-height: 1.5;
-}
-
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
 }
