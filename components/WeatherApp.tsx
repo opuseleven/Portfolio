@@ -30,8 +30,8 @@ const WeatherApp: React.FC = () => {
   }, []);
 
   return (
-    <div>
-      <div>
+    <div className={styles.container}>
+      <div className={styles.main}>
         <div className={styles.title}>
           <h1>WeatherApp</h1>
         </div>
