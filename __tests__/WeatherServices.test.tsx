@@ -23,7 +23,7 @@ describe('All Weather services tests', () => {
     expect(day.weatherDescription).toBe(weatherData[0]['weather'][0]['description']);
     expect(day.precipitation).toBe(Number(weatherData[0]['pop']) * 100);
     expect(day.weatherId).toBe(800);
-    expect(day.weatherImage).toBe('/../public/weather-images/sunny.png');
+    expect(day.weatherImage).toBe('/weather-images/sunny.png');
   })
 
   let image = "";
