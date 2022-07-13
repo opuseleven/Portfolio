@@ -1,9 +1,33 @@
-.container {
+.containerdark {
   padding: 16vh;
   align-content: center;
   border-style: solid;
   border-color: black;
   background-color: #212529;
+  color: white;
+}
+
+.container {
+  padding: 16vh;
+  align-content: center;
+  border-style: solid;
+  border-color: black;
+  background-color: white;
+  color: black;
+}
+
+.titledark {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 4rem;
+  color: white;
+}
+
+.title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 4rem;
+  color: black;
 }
 
 .searchformcontainer {
@@ -28,6 +52,19 @@
   cursor: pointer;
 }
 
+.buttonscontainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.filterbutton {
+  margin-right: 1vw;
+}
+
+.darkmodebutton {
+  margin-left: 2vw;
+}
+
 .filterscontainer {
   margin-top: 2vh;
   margin-bottom: 2vh;
@@ -39,16 +76,30 @@
 
 .renderbrewerycontainer {
   border-style: solid;
-  border-color: white;
+  border-color: black;
   border-radius: 20px;
   margin: 20px;
 }
 .renderbrewerycontainer a{
-  color: white;
+  color: black;
 }
 .renderbrewerycontainer a:hover {
   color: yellow;
 }
+
+.renderbrewerycontainerdark {
+  border-style: solid;
+  border-color: white;
+  border-radius: 20px;
+  margin: 20px;
+}
+.renderbrewerycontainerdark a{
+  color: white;
+}
+.renderbrewerycontainerdark a:hover {
+  color: yellow;
+}
+
 .renderselectedbrewerycontainer {
   border-style: solid;
   border-color: red;
@@ -56,7 +107,7 @@
   margin: 20px;
 }
 .renderselectedbrewerycontainer a{
-  color: white;
+  color: inherit;
 }
 .renderselectedbrewerycontainer a:hover {
   color: yellow;
