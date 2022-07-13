@@ -3,6 +3,7 @@ import { Brewery, TypeFilterState, defaultTypeFilterState } from '../types';
 import { useState, useEffect } from 'react';
 import { SearchForm, RenderBrewery, Filters, ListMapSwitch, MapContainer } from './brewerycomponents';
 import { filterByType, typeFilterCheck, filterByHasCoordinates } from '../services/breweryservices';
+import { DarkModeButton } from './recordappcomponents';
 
 const BreweryApp: React.FC = () => {
 
@@ -14,6 +15,7 @@ const BreweryApp: React.FC = () => {
 
   const [typeFilterState, setTypeFilterState] = useState<TypeFilterState>(defaultTypeFilterState);
   const [stateFilter, setStateFilter] = useState('');
+  const [darkMode, setDarkMode] = useState(true);
 
   useEffect(() => {
   const originalArray = breweries;
@@ -42,8 +44,10 @@ const BreweryApp: React.FC = () => {
 }, [breweries, showMap]);
 
   return (
-    <div className={styles.container}>
-      <h1>BreweryApp</h1>
+    <div className={darkMode ? styles.containerdark : styles.container}>
+      <h1 className={darkMode ? styles.titledark : styles.title}>
+        BreweryApp
+      </h1>
 
       <div>
 
@@ -55,9 +59,15 @@ const BreweryApp: React.FC = () => {
 
           <div>
 
-            <div>
+            <div className={styles.buttonscontainer}>
 
-              <button onClick={() => setShowFilters(!showFilters)}>Filters  { showFilters ? String.fromCharCode(9662) : String.fromCharCode(9656)}</button>
+              <button onClick={() => setShowFilters(!showFilters)}
+                className={styles.filterbutton}
+              >
+                Filters  { showFilters ? String.fromCharCode(9662) : String.fromCharCode(9656)}
+              </button>
+
+              <DarkModeButton darkMode={darkMode} setDarkMode={setDarkMode} />
 
             </div>
             {
@@ -85,7 +95,7 @@ const BreweryApp: React.FC = () => {
             displayedBreweries && (
               displayedBreweries.map(b => (
                 <div key={b.obdb_id ? b.obdb_id.toString() : null}>
-                  <RenderBrewery brewery={b} selectedBrewery={selectedBrewery} setSelectedBrewery={setSelectedBrewery} />
+                  <RenderBrewery brewery={b} selectedBrewery={selectedBrewery} setSelectedBrewery={setSelectedBrewery} darkMode={darkMode} />
                 </div>
               ))
             )
