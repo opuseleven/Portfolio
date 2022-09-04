@@ -21,7 +21,7 @@
 }
 
 .projectcontainer {
-  width: 72vw;
+  width: 100%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -33,7 +33,7 @@
   margin-bottom: 2vh;
   padding-bottom: 2vh;
   border-style: solid;
-  min-width: 80vw;
+  min-width: 80%;
   border-color: white;
   border-radius: 2vw;
 }
