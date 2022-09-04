@@ -1,5 +1,6 @@
 .bannercontainer {
   min-width: 80vw;
+  padding-left: 4vw;
 }
 
 .toolbar {
@@ -9,7 +10,7 @@
 
 .navbutton {
   min-height: 4vh;
-  min-width: 16vw;
+  min-width: 18vw;
   border-radius: 10px;
   background-color: #d8dee9;
 }
