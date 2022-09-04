@@ -52,8 +52,9 @@
   justify-content: center;
   align-items: center;
   flex-grow: 1;
+  text-decoration: underline;
 }
 
 .footer a:hover {
-  text-decoration: underline;
+  color: #7fdaf4;
 }
