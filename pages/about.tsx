@@ -11,6 +11,7 @@ const AboutMe: NextPage = () => {
       <Head>
         <title>Cody Clark&#39;s Development Portfolio - About Me</title>
         <meta name="description" content="Cody Clark's Development Portfolio About Me page." />
+        <meta name="viewport"content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
