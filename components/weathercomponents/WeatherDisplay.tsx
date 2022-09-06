@@ -44,7 +44,7 @@ const WeatherDisplay: React.FC<WeatherDisplayProps> = ({ data }) => {
                 <p>{today.weatherDescription}</p>
                 <p>Temperature: {today.temp}°F</p>
                 <p>Humidity: {today.humidity}%</p>
-                <p>Precipitation: {today.precipitation}%</p>
+                <p>Precipitation: {Number(today.precipitation).toPrecision(2)}%</p>
               </div>
             )
           }
