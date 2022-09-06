@@ -21,7 +21,7 @@ const CityDisplay: React.FC<CityDisplayProps> = ({ data }) => {
         city && (
           <div>
             <h2>{city.name}</h2>
-            <p>{data['city']['coord']['lat']}° {data['city']['coord']['lon']}</p>
+            <p>{data['city']['coord']['lat']}° {data['city']['coord']['lon']}°</p>
           </div>
         )
       }
