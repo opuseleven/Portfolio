@@ -1,7 +1,8 @@
 import Link from 'next/link';
+import { FC } from 'react';
 import styles from '../styles/Components.module.css';
 
-const Toolbar: React.FC = () => {
+const Toolbar: FC = () => {
   return (
     <div className={styles.toolbar}>
 

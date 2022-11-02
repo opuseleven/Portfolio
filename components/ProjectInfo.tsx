@@ -1,11 +1,12 @@
 import { Project } from '../types';
+import { FC } from 'react';
 import styles from '../styles/Components.module.css';
 
 interface ProjectInfoProps {
   project: Project
 }
 
-const ProjectInfo: React.FC<ProjectInfoProps> = ({ project }) => {
+const ProjectInfo: FC<ProjectInfoProps> = ({ project }) => {
 
   return (
     <div className={styles.projectinfocontainer}>

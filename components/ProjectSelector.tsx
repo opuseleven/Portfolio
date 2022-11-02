@@ -1,12 +1,12 @@
-import { useState, useEffect } from 'react';
+import { FC, Dispatch, SetStateAction, useState, useEffect } from 'react';
 import styles from '../styles/Components.module.css';
 
 interface ProjectSelectorProps {
   selectedId: number,
-  setSelectedId: React.Dispatch<React.SetStateAction<number>>
+  setSelectedId: Dispatch<SetStateAction<number>>
 }
 
-const ProjectSelector: React.FC<ProjectSelectorProps> = ({ selectedId, setSelectedId }) => {
+const ProjectSelector: FC<ProjectSelectorProps> = ({ selectedId, setSelectedId }) => {
 
   const [id, setId] = useState(selectedId);
 
