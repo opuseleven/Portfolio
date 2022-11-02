@@ -1,11 +1,13 @@
 import styles from '../styles/Brewery.module.css';
 import { Brewery, TypeFilterState, defaultTypeFilterState } from '../types';
-import { useState, useEffect } from 'react';
-import { SearchForm, RenderBrewery, Filters, ListMapSwitch, MapContainer } from './brewerycomponents';
-import { filterByType, typeFilterCheck, filterByHasCoordinates } from '../services/breweryservices';
+import { FC, useState, useEffect } from 'react';
+import { SearchForm, RenderBrewery, Filters, ListMapSwitch,
+  MapContainer } from './brewerycomponents';
+import { filterByType, typeFilterCheck,
+  filterByHasCoordinates } from '../services/breweryservices';
 import { DarkModeButton } from './recordappcomponents';
 
-const BreweryApp: React.FC = () => {
+const BreweryApp: FC = () => {
 
   const [breweries, setBreweries] = useState<Brewery[]>([]);
   const [displayedBreweries, setDisplayedBreweries] = useState<Brewery[]>([]);
@@ -72,7 +74,9 @@ const BreweryApp: React.FC = () => {
             </div>
             {
               showFilters && (
-                <Filters setStateFilter={setStateFilter} typeFilterState={typeFilterState} setTypeFilterState={setTypeFilterState} />
+                <Filters setStateFilter={setStateFilter}
+                  typeFilterState={typeFilterState}
+                  setTypeFilterState={setTypeFilterState} />
               )
             }
           </div>
@@ -95,7 +99,8 @@ const BreweryApp: React.FC = () => {
             displayedBreweries && (
               displayedBreweries.map(b => (
                 <div key={b.obdb_id ? b.obdb_id.toString() : null}>
-                  <RenderBrewery brewery={b} selectedBrewery={selectedBrewery} setSelectedBrewery={setSelectedBrewery} darkMode={darkMode} />
+                  <RenderBrewery brewery={b} selectedBrewery={selectedBrewery}
+                    setSelectedBrewery={setSelectedBrewery} darkMode={darkMode} />
                 </div>
               ))
             )
