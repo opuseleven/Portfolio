@@ -19,6 +19,8 @@ const Home: NextPage = () => {
 
         <Toolbar />
 
+        <p>Everything you see here is built using Typescript & React.</p>
+
       </main>
 
       <footer className={styles.footer}>
