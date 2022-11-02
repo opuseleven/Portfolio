@@ -1,6 +1,7 @@
+import { FC } from 'react';
 import styles from '../styles/Components.module.css';
 
-function Banner() {
+const Banner: FC = () => {
 
   return (
     <div className={styles.bannercontainer}>
