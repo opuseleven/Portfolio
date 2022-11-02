@@ -1,10 +1,11 @@
-import { useState } from 'react';
+import { FC, useState } from 'react';
 import { ViewScreen, ClearButton, NegativeButton, DivideButton, NumberButton,
-  MultiplyButton, SubtractButton, AddButton, ZeroButton, DecimalButton, EqualsButton } from './calcbasiccomponents';
+  MultiplyButton, SubtractButton, AddButton, ZeroButton, DecimalButton,
+  EqualsButton } from './calcbasiccomponents';
 import { handleSignClick, handleNumberClick } from '../services/calcservices';
 import styles from '../styles/Calculator.module.css';
 
-const CalcBasic: React.FC = () => {
+const CalcBasic: FC = () => {
 
   const [viewedNumber, setViewedNumber] = useState(0);
   const [storedNumber, setStoredNumber] = useState(0);
