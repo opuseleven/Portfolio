@@ -1,6 +1,5 @@
 import { FC } from 'react';
 import App from './ToDoApp/pages';
-import styles from '../styles/ToDo.module.css';
 
 const ToDoApp: FC = () => {
 
