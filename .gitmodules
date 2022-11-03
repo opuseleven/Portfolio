@@ -1,3 +1,6 @@
 [submodule "components/Calc-Basic"]
 	path = components/Calc-Basic
 	url = git@github.com:opuseleven/Calc-Basic.git
+[submodule "components/ToDoApp"]
+	path = components/ToDoApp
+	url = git@github.com:opuseleven/ToDoApp.git
