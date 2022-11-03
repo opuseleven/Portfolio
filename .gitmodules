@@ -7,3 +7,6 @@
 [submodule "components/BrewerySearchApp"]
 	path = components/BrewerySearchApp
 	url = git@github.com:opuseleven/BrewerySearchApp.git
+[submodule "components/WeatherApp"]
+	path = components/WeatherApp
+	url = git@github.com:opuseleven/WeatherApp.git
