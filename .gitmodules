@@ -10,3 +10,6 @@
 [submodule "components/WeatherApp"]
 	path = components/WeatherApp
 	url = git@github.com:opuseleven/WeatherApp.git
+[submodule "components/RecordDataSearch"]
+	path = components/RecordDataSearch
+	url = git@github.com:opuseleven/RecordDataSearch.git
