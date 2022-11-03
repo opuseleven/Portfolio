@@ -4,3 +4,6 @@
 [submodule "components/ToDoApp"]
 	path = components/ToDoApp
 	url = git@github.com:opuseleven/ToDoApp.git
+[submodule "components/BrewerySearchApp"]
+	path = components/BrewerySearchApp
+	url = git@github.com:opuseleven/BrewerySearchApp.git
