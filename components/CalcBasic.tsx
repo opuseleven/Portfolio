@@ -1,10 +1,11 @@
 import { FC } from 'react';
 import App from './Calc-Basic/pages';
+import styles from '../styles/Components.module.css';
 
 const CalcBasic: FC = () => {
 
   return (
-    <div>
+    <div className={styles.calcappcontainer}>
       <App />
     </div>
   )
