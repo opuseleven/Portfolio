@@ -1,11 +1,11 @@
-import Home from './BrewerySearchApp/pages';
+import App from './BrewerySearchApp/pages';
 import { FC } from 'react';
 
 const BreweryApp: FC = () => {
 
   return (
     <div>
-      <Home />
+      <App />
     </div>
   )
 }
