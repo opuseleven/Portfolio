@@ -31,7 +31,7 @@ const AboutMe: NextPage = () => {
 
         <Image src={`/about-images/CodyProfilePic.png`}
           alt='An image of Cody, as seen sitting in a field.'
-          width={800} height={480}
+          width={800} height={534}
         />
 
       </main>
