@@ -7,5 +7,18 @@ export default function handler(
   req: NextApiRequest,
   res: NextApiResponse<Project[]>
 ) {
-  res.status(200).json(data);
+  if (req.method === 'GET') {
+    res.status(200).json(data);
+    return new Response(
+      JSON.stringify({
+        status: 200,
+        headers: {
+          'content-type': 'application/json',
+        },
+        body: data
+      })
+    )
+  } else {
+    return res.status(404);
+  }
 }
