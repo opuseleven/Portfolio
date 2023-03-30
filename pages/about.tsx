@@ -34,6 +34,12 @@ const AboutMe: NextPage = () => {
           width={800} height={534}
         />
 
+        <div className={styles.detailtextcontainer}>
+          <p>
+            You can visit my music site here: <a href="https://www.codyclarkmusic.com">www.codyclarkmusic.com</a>
+          </p>
+        </div>
+
       </main>
 
       <footer className={styles.footer}>
