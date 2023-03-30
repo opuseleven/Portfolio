@@ -36,7 +36,7 @@ const AboutMe: NextPage = () => {
 
         <div className={styles.detailtextcontainer}>
           <p>
-            You can visit my music site here: <a href="https://www.codyclarkmusic.com">www.codyclarkmusic.com</a>
+            You can visit my music site here: <a href="https://www.codyclarkmusic.com" target="_blank" rel="noreferrer">www.codyclarkmusic.com</a>
           </p>
         </div>
 
