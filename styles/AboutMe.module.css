@@ -22,6 +22,14 @@
   margin-bottom: 4vh;
 }
 
+.detailtextcontainer {
+  margin-top: 5vh;
+}
+
+.detailtextcontainer a:hover{
+  text-decoration: underline;
+}
+
 .footer {
   display: flex;
   flex: 1;
