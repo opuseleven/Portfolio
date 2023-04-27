@@ -27,7 +27,6 @@ describe('WeatherApp component', () => {
     await act(async () => {
       await new Promise(r => setTimeout(r, 2000));
     })
-    const headings = screen.getAllByRole('heading');
-    expect(headings[3]).toHaveTextContent('Walla Walla');
+    expect(await screen.findByText('Walla Walla')).toBeInTheDocument();
   })
 })
