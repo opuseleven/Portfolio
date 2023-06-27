@@ -1,6 +1,5 @@
 .bannercontainer {
   min-width: 80vw;
-  padding-left: 4vw;
 }
 
 .toolbar {
@@ -10,7 +9,7 @@
 
 .navbutton {
   min-height: 4vh;
-  min-width: 18vw;
+  min-width: 20vw;
   border-radius: 10px;
   background-color: #d8dee9;
 }
@@ -26,20 +25,43 @@
 }
 
 .projectinfocontainer {
+  width: 100vw;
   padding-top: 2vh;
   padding-left: 8vw;
+  padding-right: 8vw;
   padding-bottom: 2vh;
+  overflow-wrap: break-word;
 }
 
 .displayprojectcontainer {
+  width: 80vw;
   padding-top: 4vh;
-  padding-left: 2vw;
-  padding-right: 2vw;
   padding-bottom: 4vh;
-  margin: 8px;
   background-color: #e5e9f0;
   display: flex;
-  justify-content: center;
+  flex-grow: inherit;
+  flex-shrink: inherit;
+  justify-items: center;
+}
+
+.calcappcontainer {
+  width: 78vw;
+}
+
+.todoappcontainer {
+  width: 78vw;
+}
+
+.breweryappcontainer {
+  width: 78vw;
+}
+
+.weatherappcontainer {
+  width: 78vw;
+}
+
+.recordsearchcontainer {
+  width: 78vw;
 }
 
 .projectbutton {
@@ -47,6 +69,7 @@
   height: 8vh;
   color: black;
   background-color: #e5f4fb;
+  overflow-wrap: break-word;
 }
 
 .projectbutton:hover {
@@ -55,10 +78,11 @@
 }
 
 .selectedprojectbutton {
-  width: 16vw;
+  min-width: 16vw;
   height: 8vh;
   color: black;
   background-color: #88B04B;
+  overflow-wrap: break-word;
 }
 
 .selectedprojectbutton:hover {
