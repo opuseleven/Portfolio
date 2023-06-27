@@ -1,12 +1,13 @@
 import { Project } from '../types';
 import { CalcBasic, ToDoApp, BreweryApp, WeatherApp, RecordDataSearchApp } from '../components';
+import { FC } from 'react';
 import styles from '../styles/Components.module.css';
 
 interface DisplayProjectProps {
   project: Project
 }
 
-const DisplayProject: React.FC<DisplayProjectProps> = ({ project }) => {
+const DisplayProject: FC<DisplayProjectProps> = ({ project }) => {
 
   return (
     <div className={styles.displayprojectcontainer}>
@@ -43,7 +44,7 @@ const DisplayProject: React.FC<DisplayProjectProps> = ({ project }) => {
         }
       </div>
 
-      <div>
+      <div className={styles.recordsearchcontainer}>
         {
           project.id === 5 && (
             <RecordDataSearchApp />
