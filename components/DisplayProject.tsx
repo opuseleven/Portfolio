@@ -12,42 +12,52 @@ const DisplayProject: FC<DisplayProjectProps> = ({ project }) => {
   return (
     <div className={styles.displayprojectcontainer}>
 
-      <div className={styles.calcappcontainer}>
+      <div>
         {
           project.id === 1 && (
-            <CalcBasic />
+            <div className={styles.calcappcontainer}>
+              <CalcBasic />
+            </div>
           )
         }
       </div>
 
-      <div className={styles.todoappcontainer}>
+      <div>
         {
           project.id === 2 && (
-            <ToDoApp />
+            <div className={styles.todoappcontainer}>
+              <ToDoApp />
+            </div>
           )
         }
       </div>
 
-      <div className={styles.breweryappcontainer}>
+      <div>
         {
           project.id === 3 && (
-            <BreweryApp />
+            <div className={styles.breweryappcontainer}>
+              <BreweryApp />
+            </div>
           )
         }
       </div>
 
-      <div className={styles.weatherappcontainer}>
+      <div>
         {
           project.id === 4 && (
-            <WeatherApp />
+            <div className={styles.weatherappcontainer}>
+              <WeatherApp />
+            </div>
           )
         }
       </div>
 
-      <div className={styles.recordsearchcontainer}>
+      <div>
         {
           project.id === 5 && (
-            <RecordDataSearchApp />
+            <div className={styles.recordsearchcontainer}>
+              <RecordDataSearchApp />
+            </div>
           )
         }
       </div>
