@@ -25,7 +25,7 @@
 }
 
 .projectinfocontainer {
-  width: 100vw;
+  min-width: 90vw;
   padding-top: 2vh;
   padding-left: 8vw;
   padding-right: 8vw;
@@ -41,27 +41,36 @@
   display: flex;
   flex-grow: inherit;
   flex-shrink: inherit;
-  justify-items: center;
 }
 
 .calcappcontainer {
-  width: 78vw;
+  width: 80vw;
+  display: flex;
+  justify-content: center;
 }
 
 .todoappcontainer {
-  width: 78vw;
+  width: 76vw;
+  display: flex;
+  justify-content: center;
 }
 
 .breweryappcontainer {
-  width: 78vw;
+  width: 76vw;
+  display: flex;
+  justify-content: center;
 }
 
 .weatherappcontainer {
-  width: 78vw;
+  min-width: 76vw;
+  display: flex;
+  justify-content: center;
 }
 
 .recordsearchcontainer {
-  width: 78vw;
+  min-width: 76vw;
+  display: flex;
+  justify-content: center;
 }
 
 .projectbutton {
