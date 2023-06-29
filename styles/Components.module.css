@@ -25,7 +25,7 @@
 }
 
 .projectinfocontainer {
-  min-width: 90vw;
+  width: 90vw;
   padding-top: 2vh;
   padding-left: 8vw;
   padding-right: 8vw;
